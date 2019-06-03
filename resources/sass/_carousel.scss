@@ -1,0 +1,83 @@
+.carousel-images{
+    background: url(/images/images-bg.png);
+    background-size: 99%;
+    background-repeat: no-repeat;
+    background-position-y: 155px;
+    min-height: 70vh;
+    .container{
+        text-align: center;
+        h2{
+            font: 45px Gotham HTF Medium;
+            line-height: 54px;
+            color: #91a3ad;
+            text-transform: uppercase;
+            margin: 0;
+            &:after{
+                content:'';
+                width: 20px;
+                height: 3px;
+                background: $magenta;
+                display: block;
+                margin: 32px auto 40px auto;
+            }
+        }
+        .slick-slider{
+            width: 80%;
+            margin: 0 auto;
+            img{
+                width: 100%;
+            }
+            .slick-arrow{
+                position: absolute;
+                z-index: 9;
+                top: calc(50% - 9.2vw);
+                font-size: 0px;
+                height: 16vw;
+                background: $magenta;
+                border: 1px solid $magenta;
+                &.slick-prev{
+                    left: -10px;
+                    padding: 0 4px 0 3px;
+                    &:after{
+                        background: url(/images/arrow-l.png);
+                        background-size: 80%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                }
+                &.slick-next{
+                    right: -10px;
+                    padding: 0 3px 0 4px;
+                    &:after{
+                        background: url(/images/arrow-r.png);
+                        background-size: 80%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                }
+                &:after{
+                    content:'';        
+                    display: block;
+                    height: 19px;
+                    width: 11px;
+                }
+            }
+            .slick-dots{
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                li{
+                    display: none;
+                    padding: 10px 0;
+                    a{
+                        color: #91a3ad;
+                        font: 14px Roboto Medium;
+                    }
+                    &.slick-active{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

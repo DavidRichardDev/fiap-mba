@@ -1,0 +1,91 @@
+.news{
+    background: url(/images/news-bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: auto;
+    padding-top: 238px;
+    margin: 0 0 15vh 0;
+    .container{
+        h1{
+            font:62px Gotham HTF Medium;
+            line-height: 63px;
+            color: #91a3ad;
+            text-transform: uppercase;
+            margin: 0 0 135px 0;
+            &:before{
+                content: "";
+                background: $magenta;
+                height: 10px;
+                width: 10px;
+                display: inline-block;
+                position: relative;
+                bottom: 15px;
+                margin-right: 35px;
+            }
+        }
+        .notice{
+            padding: 20px 30px;
+            min-height: 660px;
+            .img{
+                max-width: 100%;
+                opacity: 0.6;
+                &:hover{
+                    opacity: 1;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+            h5{
+                font:18px Gotham HTF Medium;
+                line-height: 29px;
+                letter-spacing: .5px;
+                color: #91a3ad;
+                text-transform: uppercase;
+                margin: 15px 0 7px 0;
+            }
+            span{
+                font:13px Gotham HTF Medium;
+                line-height: 18px;
+                letter-spacing: .5px;
+                color: #586369;
+                text-transform: uppercase;
+                &:after{
+                    content: "";
+                    background: $magenta;
+                    height: 3.5px;
+                    width: 65px;
+                    display: block;
+                    margin: 15px 0 20px 0;
+                }
+            }
+            p{
+                font:13px Gotham HTF Medium;
+                line-height: 22px;
+                letter-spacing: .5px;
+                color: #91a3ad;
+            }
+            .read-more{
+                font:13px Gotham HTF Medium;
+                line-height: 32px;
+                letter-spacing: .15px;
+                text-transform: uppercase;
+                color: $magenta;
+                text-decoration: none;
+                &:before{
+                    content: "+";
+                    border: 1px solid $magenta;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 100%;
+                    font: 25px Gotham HTF Light;
+                    text-align: center;
+                    display: inline-block;
+                    margin: 0 10px 0 0;
+                    position: relative;
+                    top: 3px;
+                }
+            }
+        }
+    }   
+}

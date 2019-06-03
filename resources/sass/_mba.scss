@@ -1,0 +1,22 @@
+.mba{
+    background: url(/images/mba-bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 20px 0 0 0;
+    .container{
+        text-align: center;
+        svg{
+            margin-top: 115px;
+            max-width: 100%;
+            width: 100%;
+        }
+        h4{
+            color:#91a3ad;
+            font: 20px Gotham HTF Book;
+            text-transform: uppercase;
+            margin: 70px 0px;
+            line-height: 35.4px;
+        }
+    }
+}

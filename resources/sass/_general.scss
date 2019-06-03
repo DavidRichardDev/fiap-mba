@@ -1,0 +1,17 @@
+html{
+    margin:0;
+    body{
+        margin:0;
+        background: $body-bg;
+        background-size: 100%;
+        background-repeat: repeat-y;
+        .bg-gray{
+            background: $bg-gray;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        button, a{
+            outline: none;
+        }
+    }
+}

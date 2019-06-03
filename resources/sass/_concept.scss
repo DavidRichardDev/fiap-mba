@@ -1,0 +1,31 @@
+.concept{
+    background: url(/images/conceito-bg.png);
+    background-size: 95%;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    .container{
+        text-align: center;
+        h3{
+            font: 40px Gotham HTF Light;
+            color: #cee7f5;
+            span{
+                font: 40px Gotham HTF Medium;
+            }
+        }
+        p{
+            font: 16px Gotham HTF Book;
+            line-height: 38px;
+            color: #9dabb2;
+            margin: 40px 0;
+            text-transform: uppercase;
+        }
+        .join-us{
+            display: block;
+            background: url(/images/cta-conceito.png);
+            background-size: 135px;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 195px;
+        }
+    }
+}

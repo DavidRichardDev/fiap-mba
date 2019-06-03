@@ -1,0 +1,138 @@
+.form{
+    background: url(/images/form-bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 25vh 0;
+    h1{
+        font:62px Gotham HTF Medium;
+        line-height: 63px;
+        color: #91a3ad;
+        text-transform: uppercase;
+        margin: 0 0 135px 15px;
+        &:before{
+            content: "";
+            background: $magenta;
+            height: 10px;
+            width: 10px;
+            display: inline-block;
+            position: relative;
+            bottom: 15px;
+            margin-right: 35px;
+        }
+    }
+    form{
+        margin: 0 0 0 50px;
+        max-width: 1000px;
+        .form-group{
+            margin: 0 0 2.5rem 0;
+            label{
+                color: #586369;
+                font:12px Gotham HTF Medium;
+                line-height: 10px;
+                display: block;
+                text-transform: uppercase;
+                padding: 0 0 0 15px;
+                &.required{
+                    &:after{
+                        content: "*";
+                        color: $magenta;
+                        margin: 0 0 0 5px;
+                        font-size: 14px;
+                    }
+                }
+            }
+            input, textarea, select, option{
+                background: transparent;
+                border: 1px solid #586369;
+                width: 100%;
+                outline: none;
+                color: #91a3ad;
+                text-transform: uppercase;
+                font:15px Gotham HTF Medium;
+                padding: 0 15px;
+            }
+            input, select, option{
+                height: 45px;
+            }
+            textarea{
+                padding: 15px;
+            }
+            input[type=radio]{
+                display: inline-block;
+                width: 0px;
+                &:after{
+                    content: "";
+                    background: #08090b;
+                    width: 15px;
+                    height: 15px;
+                    border: 1px solid #586369;
+                    cursor: pointer;
+                    display: block;
+                    position: relative;
+                    top: 14px;
+                }
+                &:checked{
+                    &:after{
+                        background: #586369;
+                    }
+                }
+            }
+            input[type=radio] + label{
+                display: inline-block;
+                padding: 0 0 0 10px;
+                position: relative;
+                bottom: 19px;
+                margin: 0 10px;
+            }
+            &.city{
+                div{
+                    display: inline-block;
+                    width: 25%;
+                    &:first-child{
+                        width: 70%;
+                        margin: 0 4% 0 0;
+                    }
+                }
+            }
+            &.contact{
+                div{
+                    display: inline-block;
+                    width: 40%;
+                    &:first-child{
+                        width: 25%;
+                        margin: 0 4% 0 0;
+                    }
+                }
+            }
+            &.buttons{
+                text-align: right;
+                button{
+                    width: 30%;
+                    height: 38px;
+                    text-align: center;
+                    color: $magenta;
+                    background: transparent;
+                    border: 1px solid $magenta;
+                    text-transform: uppercase;
+                    font: 11px Gotham HTF Medium;
+                    line-height: 15px;
+                    letter-spacing: 1.5px;
+                    &:hover{
+                        color: #000;
+                        background: $magenta;
+                    }
+                }
+                button[type=submit]{
+                    color: #000;
+                    background: $magenta;
+                    border: 1px solid $magenta;
+                    margin: 0 0 0 15px;
+                    &:hover{
+                        color: $magenta;
+                        background: transparent;
+                    }
+                }
+            }
+        }
+    }
+}

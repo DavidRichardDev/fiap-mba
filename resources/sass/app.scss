@@ -1,0 +1,22 @@
+// Fonts
+@import 'fonts';
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+// Variables
+@import 'variables';
+
+//styles
+@import 'general';
+@import 'header';
+@import 'mba';
+@import 'concept';
+@import 'carousel';
+@import 'news';
+@import 'form';
+@import 'footer';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Slick slide
+@import '~slick-carousel/slick/slick';
