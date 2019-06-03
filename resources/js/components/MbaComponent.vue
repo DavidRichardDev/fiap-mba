@@ -11,6 +11,11 @@
 
 <script>
     export default {
-        mounted() {}
+        mounted() {
+            setTimeout(function(){ 
+                var element = document.querySelector("svg");
+                element.classList.add("animation");
+            }, 2000);
+        }
     }
 </script>

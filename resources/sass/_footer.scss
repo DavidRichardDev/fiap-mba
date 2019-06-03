@@ -17,7 +17,7 @@ footer{
         }
         li{
             color: #91a3ad;
-            font: 12px Roboto Regular;
+            font: 12px Roboto;
             line-height: 25px;
             span{
                 font-weight: bold;
@@ -28,7 +28,7 @@ footer{
             }
             a{
                 color: #91a3ad;
-                font: 12px Roboto Regular;
+                font: 12px Roboto;
                 line-height: 25px;
                 text-decoration: none;
                 &:hover{
@@ -38,10 +38,11 @@ footer{
             }
             &.title, &.title-half{
                 color: $magenta;
-                font: 11px Roboto Medium;
+                font: 11px Roboto;
                 line-height: 22px;
                 text-transform: uppercase;
                 margin: 0 0 15px 0;
+                font-weight: 500;
             }
             &.title-half{
                 margin: 25px 0 15px 0;
